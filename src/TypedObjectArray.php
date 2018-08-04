@@ -87,7 +87,7 @@ class TypedObjectArray extends ArrayObject
      *
      * @return void
      */
-    public function offsetSet($index, $newval)
+    public function offsetSet($index, $newval): void
     {
         if ($newval instanceof $this->type) {
             parent::offsetSet($index, $newval);
